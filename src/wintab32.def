@@ -1,0 +1,47 @@
+LIBRARY WINTAB32
+EXPORTS
+    WTInfoA                    = WINTAB32_WTInfoA                    @20
+    WTOpenA                    = WINTAB32_WTOpenA                    @21
+    WTClose                    = WINTAB32_WTClose                    @22
+    WTPacketsGet               = WINTAB32_WTPacketsGet               @23
+    WTPacket                   = WINTAB32_WTPacket                   @24
+    WTEnable                   = WINTAB32_WTEnable                   @40
+    WTOverlap                  = WINTAB32_WTOverlap                  @41
+    WTConfig                   = WINTAB32_WTConfig                   @60
+    WTGetA                     = WINTAB32_WTGetA                     @61
+    WTSetA                     = WINTAB32_WTSetA                     @62
+    WTExtGet                   = WINTAB32_WTExtGet                   @63
+    WTExtSet                   = WINTAB32_WTExtSet                   @64
+    WTSave                     = WINTAB32_WTSave                     @65
+    WTRestore                  = WINTAB32_WTRestore                  @66
+    WTPacketsPeek              = WINTAB32_WTPacketsPeek              @80
+    WTDataGet                  = WINTAB32_WTDataGet                  @81
+    WTDataPeek                 = WINTAB32_WTDataPeek                 @82
+    WTQueueSizeGet             = WINTAB32_WTQueueSizeGet             @84
+    WTQueueSizeSet             = WINTAB32_WTQueueSizeSet             @85
+    WTMgrOpen                  = WINTAB32_WTMgrOpen                  @100
+    WTMgrClose                 = WINTAB32_WTMgrClose                 @101
+    WTMgrContextEnum           = WINTAB32_WTMgrContextEnum           @120
+    WTMgrContextOwner          = WINTAB32_WTMgrContextOwner          @121
+    WTMgrDefContext            = WINTAB32_WTMgrDefContext            @122
+    WTMgrDeviceConfig          = WINTAB32_WTMgrDeviceConfig          @140
+    WTMgrExt                   = WINTAB32_WTMgrExt                   @180
+    WTMgrCsrEnable             = WINTAB32_WTMgrCsrEnable             @181
+    WTMgrCsrButtonMap          = WINTAB32_WTMgrCsrButtonMap          @182
+    WTMgrCsrPressureBtnMarks   = WINTAB32_WTMgrCsrPressureBtnMarks   @183
+    WTMgrCsrPressureResponse   = WINTAB32_WTMgrCsrPressureResponse   @184
+    WTMgrCsrExt                = WINTAB32_WTMgrCsrExt                @185
+    WTQueuePacketsEx           = WINTAB32_WTQueuePacketsEx           @200
+    WTMgrCsrPressureBtnMarksEx = WINTAB32_WTMgrCsrPressureBtnMarksEx @201
+    WTMgrConfigReplaceExA      = WINTAB32_WTMgrConfigReplaceExA      @202
+    WTMgrPacketHookExA         = WINTAB32_WTMgrPacketHookExA         @203
+    WTMgrPacketUnhook          = WINTAB32_WTMgrPacketUnhook          @204
+    WTMgrPacketHookNext        = WINTAB32_WTMgrPacketHookNext        @205
+    WTMgrDefContextEx          = WINTAB32_WTMgrDefContextEx          @206
+    WTInfoW                    = WINTAB32_WTInfoW                    @1020
+    WTOpenW                    = WINTAB32_WTOpenW                    @1021
+    WTGetW                     = WINTAB32_WTGetW                     @1061
+    WTSetW                     = WINTAB32_WTSetW                     @1062
+    WTMgrConfigReplaceExW      = WINTAB32_WTMgrConfigReplaceExW      @1202
+    WTMgrPacketHookExW         = WINTAB32_WTMgrPacketHookExW         @1203
+    

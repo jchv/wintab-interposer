@@ -1,0 +1,23 @@
+name: "Build"
+on:
+  pull_request:
+  push:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.4.0
+    - name: Install Nix
+      uses: cachix/install-nix-action@v15
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+    - name: Build
+      run: nix-shell --run make
+    - name: Upload Build
+      uses: actions/upload-artifact@v3
+      with:
+        name: wintab32
+        path: |
+          out/x86/wintab32.dll
+          out/x64/wintab32.dll
